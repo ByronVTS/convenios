@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convenios</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <h2> <a href="./index.html">Convenios</a></h2>
+      </div>
+      <ul>
+        <li><a href="#">Visitas tecnicas</a></li>
+        <!-- <li><a href="">Traslados - Reubicaciones</a></li> -->
+        <li><a href="./suspendidos.html">Suspendidos</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <h1 class="titulo">Visitas tecnicas</h1>
+      <section class="seccion-opciones">
+        <div class="opciones ">
+          <label for="">Tipo de visita</label>
+          <select name="" id="tipo_soporte">
+            <option value="-----">-----</option>
+            <option value="TRASLADO/REUBICACION/SOPORTE">traslado/reubicacion/soporte</option>
+            <option value="VISITA TECNICA">Visita tecnica</option>
+            <option value="CAMBIO DE ROSETA">Cambio de roseta</option>
+            <option value="CAMBIO DE PATCH-CORD">Cambio patch-cord</option>
+            <option value="CAMBIO DE EQUIPO">Cambio de equipo</option>
+            <option value="TRASLADO">Traslado</option>
+            <option value="REUBICACION">Reubicación</option>
+            <option value="RUPTURA DE FIBRA">Ruptura de fibra</option>
+          </select>
+        </div>
+        <div class="opciones ">
+          <label for="">Valor visita</label>
+          <select name="" id="valor_visita">
+            <option value="-----">-----</option>
+            <option value="$15">$15</option>
+            <option value="$22">$22</option>
+            <option value="$35">$35</option>
+          </select>
+        </div>
+        <div class="opciones">
+          <label for="">Meses diferido</label>
+          <select name="" id="meses_diferidos">
+            <option value="-----">-----</option>
+            <!-- <option value="1 mes">1 mes</option> -->
+            <option value="2 meses">2 meses</option>
+            <option value="3 meses">3 meses</option>
+          </select>
+        </div>
+        <div class="opciones ">
+          <label for="">Fecha facturacion</label>
+          <select name="" id="fecha_facturacion">
+            <option value="-----">-----</option>
+            <option value="FECHA 1">Fecha 1</option>
+            <option value="FECHA 15">Fecha 15</option>
+          </select>
+        </div>
+      </section>
+      <section id="respuesta">
+        <textarea id="respuesta__texto">
+Ejemplo para convenio de pago por visita tecnica (.......fecha actual.......) 
+Promesa de pago (.......tipo de soporte.......) (.......fecha de facturacion.......) de cada mes 
+          
+1.- De contado a los técnicos el momento del soporte el valor de (..valor visita.......)
+2.- Diferido Estimado cliente su soporte lo puede pagar de la siguiente manera: 
+    (.......convenio.......) 
+
+Los pagos los debe hacer con el pago de la factura del servicio de cada mes.
+Recuerde que su factura se emite el (.......dia de facturacion.......) y máximo debe pagarla del (.......rango de fechas.......) para evitar inconvenientes con la suspensión del servicio ya que el (.......dia de corte de servicio.......) ya se estaría cortando el serivicio.
+        </textarea>
+      </section>
+      <div class="btn">
+        <button class= "btn-evaluar-visitas">Evaluar</button>
+        <button class= "btn-copiar">Copiar</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo"> 
+        <img src="./img/murcielago (2).png" alt="logo" class="">
+      </div>
+      <h5>Todos los derechos reservados</h5>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
