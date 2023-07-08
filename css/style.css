@@ -168,7 +168,7 @@ main{
   display: flex;
   width: 100%;
   justify-content:center;
-  background-color: #17202a5b;
+  background-color: rgba(214, 25, 25, 0.357);
   margin-top: 5rem;
   padding-top: 1rem;
 }
