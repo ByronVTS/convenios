@@ -20,6 +20,8 @@ html {
   box-sizing: border-box;
   font-size: 65.5%;
   color: white;
+  min-height: 100%;
+  position: relative;
 }
 *,
 *:before,
@@ -169,8 +171,11 @@ main{
   width: 100%;
   justify-content:center;
   background-color: rgba(214, 25, 25, 0.357);
-  margin-top: 5rem;
+  margin-top: 20rem;
   padding-top: 1rem;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
 }
 .footer__logo{
   width: 7%;
