@@ -172,7 +172,7 @@ main{
   justify-content:center;
   background-color: rgba(214, 25, 25, 0.357);
   margin-top: 20rem;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   position: absolute;
   bottom: 0;
   height: 40px;
