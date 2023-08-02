@@ -101,4 +101,14 @@ Recuerde que su factura se emite el ${diaFacturacion} y máximo debe pagarla del
     }
     copiarTexto();
   });
+
+
+    // botoncito de aparacion de menu mobile
+    const menuMobile = document.querySelector(".menuMobile") 
+    const navbarMobile = document.querySelector(".navbar-mobile")
+  
+    menuMobile.addEventListener("click",  function (){
+      navbarMobile.classList.toggle("inactive")
+    })
+  
 });

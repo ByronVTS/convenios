@@ -75,9 +75,6 @@ img {
   margin-left: 1rem;
   color: #2bc993;
 }
-.logo img{
-  display: none;
-}
 
 /* NAVBAR */
 .nav-bar {
@@ -183,6 +180,9 @@ main{
   margin: 0;
 align-self: center;
 }
+.inactive{
+  display: none;
+}
 
 /* MOBILE */
 @media (max-width: 480px) {
@@ -198,6 +198,7 @@ align-self: center;
     margin: 0;
   }
   .logo img{
+    display: block;
     width: 3rem;
     margin: 1rem;
   }
@@ -207,8 +208,41 @@ align-self: center;
     margin: 0  0 0 1rem ;
     /* margin-left: 5rem; */
   }
-  .nav-bar ul {
+  .nav-bar ul{
     display: none;
+  }
+  .navbar-mobile{
+    position: absolute;
+    margin-top: 0rem;
+    background-color: #091C2B;
+    width: 100%;
+    height: 15rem;
+  }
+  .navbar-mobile ul{
+    display: block;
+    list-style: none;
+  }
+  .navbar-mobile ul li{
+    display: block;
+    background-color: white;
+    list-style: none;
+
+  }
+  .navbar-mobile li a{
+  text-decoration: none;
+  color: #d4816c;
+  padding: 1rem;
+  width: 100%;
+  padding-left: 2rem;
+  font-size: 3rem;
+  }
+  /* quitamos las viñetas de la lista */
+  .navbar-mobile li::marker{
+    content: "";
+  }
+  .navbar-mobile li a:hover{
+    background-color: #e1e1e1;
+    border-radius: 10px;
   }
   main{
     margin-top: 5rem;
@@ -225,7 +259,8 @@ align-self: center;
     display: flex;
     flex-direction: row;
   }
-  .opciones select{
+  .opciones select,
+  .opciones input{
     width: 100%;
     padding: 0.5rem;
   }
@@ -233,3 +268,4 @@ align-self: center;
     margin: 5rem;
   }
 }
+

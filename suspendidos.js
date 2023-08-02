@@ -93,4 +93,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     });
+
+      // botoncito de aparacion de menu mobile
+  const menuMobile = document.querySelector(".menuMobile") 
+  const navbarMobile = document.querySelector(".navbar-mobile")
+
+  menuMobile.addEventListener("click",  function (){
+    navbarMobile.classList.toggle("inactive")
+  })
+
 });

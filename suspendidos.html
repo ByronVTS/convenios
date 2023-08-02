@@ -10,25 +10,29 @@
   <body>
     <nav class="nav-bar">
       <div class="logo">
+        <img src="./img/menu.svg" alt="" class="menuMobile inactive">
         <h2 > <a href="./index.html">Convenios</a></h2>
       </div>
       <ul>
-        <li><a href="./index.html" onclick="highlightLabel" for =('visitas')">Visitas tecnicas</a></li>
+        <li><a href="./index.html" onclick="highlightLabel" >Visitas tecnicas</a></li>
         <!-- <li><a href="">Traslados - Reubicaciones</a></li> -->
-        <li><a href="./suspendidos.html" onclick="highlightLabel" for =('suspendidos') >Suspendidos</a></li>
-        
+        <li><a href="./suspendidos.html" onclick="highlightLabel" >Suspendidos</a></li>
       </ul>
     </nav>
+    <ul class="navbar-mobile inactive">
+      <li><a href="#">Visitas tecnicas</a></li>
+      <li><a href="./suspendidos.html">Suspendidos</a></li>
+    </ul>
     <main class="main">
       <h1 class="titulo">Suspendidos</h1>
       <section class="seccion-opciones">
         <div class="opciones ">
           <label for="">Fecha de factura pendiente</label>
-          <input type="date" id="fecha_factura"></input>
+          <input type="date" id="fecha_factura" placeholder="escoge"></input>
         </div>
         <div class="opciones ">
           <label for="">Valor mensual</label>
-          <select name="" id="valor_mensual">
+          <select name="" id="valor_mensual" title="valor mensual">
             <option value="-----">-----</option>
             <option value="20">$20</option>
             <option value="24">$24</option>
@@ -38,15 +42,15 @@
         </div>
         <div class="opciones ">
           <label for="">Numero de dias consumidos</label>
-          <input type="number" maxlength="2" id="numero_dias_consumidos">
+          <input type="number" maxlength="2" id="numero_dias_consumidos" placeholder="Escriba un numero">
         </div>
         <div class="opciones ">
           <label for="">Numero de dias por consumir</label>
-          <input type="number"  id="numero_dias_por_consumir">
+          <input type="number"  id="numero_dias_por_consumir" placeholder="Escriba un numero">
         </div>
         <div class="opciones ">
           <label for="">Fecha facturacion</label>
-          <select name="" id="fecha_facturacion">
+          <select name="" id="fecha_facturacion" title="Fecha de facturacion">
             <option value="-----">-----</option>
             <option value="fecha 1">Fecha 1</option>
             <option value="fecha 15">Fecha 15</option>
@@ -54,7 +58,7 @@
         </div>
       </section>
       <section id="respuesta">
-        <textarea id="respuesta__texto">
+        <textarea id="respuesta__texto" placeholder="Esto es un ejemplo">
 PROMOCIÓN PARA REACTIVACIÓN (....fecha de facturacion....):
 
 Estimado cliente al momento su saldo se desglosa de la siguiente manera:
