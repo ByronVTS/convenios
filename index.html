@@ -10,6 +10,7 @@
   <body>
     <nav class="nav-bar">
       <div class="logo">
+        <img src="./img/menu.svg" alt="">
         <h2> <a href="./index.html">Convenios</a></h2>
       </div>
       <ul>
@@ -23,7 +24,7 @@
       <section class="seccion-opciones">
         <div class="opciones ">
           <label for="">Tipo de visita</label>
-          <select name="" id="tipo_soporte">
+          <select title="tipoSoporte" id="tipo_soporte">
             <option value="-----">-----</option>
             <option value="TRASLADO/REUBICACION/SOPORTE">traslado/reubicacion/soporte</option>
             <option value="VISITA TECNICA">Visita tecnica</option>
@@ -37,7 +38,7 @@
         </div>
         <div class="opciones ">
           <label for="">Valor visita</label>
-          <select name="" id="valor_visita">
+          <select title="billetes" id="valor_visita">
             <option value="-----">-----</option>
             <option value="$15">$15</option>
             <option value="$22">$22</option>
@@ -46,7 +47,7 @@
         </div>
         <div class="opciones">
           <label for="">Meses diferido</label>
-          <select name="" id="meses_diferidos">
+          <select name="" id="meses_diferidos" title="meses">
             <option value="-----">-----</option>
             <!-- <option value="1 mes">1 mes</option> -->
             <option value="2 meses">2 meses</option>
@@ -55,7 +56,7 @@
         </div>
         <div class="opciones ">
           <label for="">Fecha facturacion</label>
-          <select name="" id="fecha_facturacion">
+          <select title="fechas" id="fecha_facturacion">
             <option value="-----">-----</option>
             <option value="FECHA 1">Fecha 1</option>
             <option value="FECHA 15">Fecha 15</option>
@@ -63,7 +64,7 @@
         </div>
       </section>
       <section id="respuesta">
-        <textarea id="respuesta__texto">
+        <textarea title="textarea" id="respuesta__texto">
 Ejemplo para convenio de pago por visita tecnica (.......fecha actual.......) 
 Promesa de pago (.......tipo de soporte.......) (.......fecha de facturacion.......) de cada mes 
           
