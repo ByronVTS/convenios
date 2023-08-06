@@ -158,4 +158,23 @@ Recuerde que su factura se emite el ${diaFacturacion} y máximo debe pagarla del
   menuMobile.addEventListener("click",  function (){
     navbarMobile.classList.toggle("inactive")
   })
+
+
+  const themeBtn = document.querySelector("#theme");
+  const body = document.querySelector("body");
+
+    //FUNCION DE CAMBIADOR DE TEMAS
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      body.classList.add(storedTheme);
+      themeBtn.value = storedTheme;
+    }
+  
+    themeBtn.addEventListener("change", function () {
+      const selectTheme = themeBtn.value;
+      body.className = selectTheme;
+      localStorage.setItem("theme", selectTheme); // Guardar la preferencia en localStorage
+      console.log(selectTheme);
+    });
+
   });
